@@ -64,7 +64,7 @@ fetch = function (currentUrl) {
 
     client.index({
       index: tentant,
-      type: 'website',
+      type: 'pages',
       body: JSON.stringify(summary)
     }, function (err, resp, status) {
       console.log(resp, err, status);
